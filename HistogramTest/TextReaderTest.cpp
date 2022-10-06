@@ -8,7 +8,7 @@ namespace TextReaderTests
 	class TextReaderTest : public ::testing::Test {
 	protected:
 		std::string dirWithTestFilesPath{
-			"C:\\Academy\\Programs\\Module 2 - ALGORITHMS\\SI - week 13\\ex-1\\histogram-cpp-starter-main\\Histogram\\"
+			"C:\\Academy\\Programs\\Module 2 - ALGORITHMS\\SI - week 13\\W13-SI-ex-1\\Histogram\\"
 		}; // TODO: Use relational path instead
 
 		std::string getLineNumberN(std::stringstream& ss, int lineNumber) {
@@ -49,7 +49,6 @@ namespace TextReaderTests
 	}
 
 	TEST_F(TextReaderTest, ReadLargeFile) {
-		// Example, feel free to modify
 		std::string fileName = dirWithTestFilesPath + "text.txt";
 		TextReader textReader(fileName);
 

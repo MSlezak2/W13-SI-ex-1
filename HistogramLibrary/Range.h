@@ -11,7 +11,7 @@ public:
     std::string toString();
 
     bool operator<(const Range& ob) const { return from < ob.from; }
-
+    friend bool operator==(const Range& lhs, const Range& rhs);
 
 private:
     int from;

@@ -57,7 +57,7 @@ std::map<Range, int> Histogram::generate(const std::string text, std::vector<Ran
 }
 
 void Histogram::normalize() {
-    //TODO: impelemnt normalization method
+    //TODO: impelement normalization method
 }
 
 std::string Histogram::draw()

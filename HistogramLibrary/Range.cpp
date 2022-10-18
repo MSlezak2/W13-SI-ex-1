@@ -12,3 +12,7 @@ std::string Range::toString()
     return { std::to_string(from) + " - " + std::to_string(to) };
 }
 
+bool operator==(const Range& lhs, const Range& rhs) {
+    return lhs.from == rhs.from && lhs.to == rhs.to;
+}
+
